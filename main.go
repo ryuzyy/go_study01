@@ -8,5 +8,9 @@ func main() {
 		sum += i
 	}
 	fmt.Println(sum)
+	sub1()
 }
 
+func sub1() {
+	fmt.Println("Yahoo")
+}
