@@ -7,7 +7,7 @@ func init() {
 	println("init")
 }
 
-// ここから全て始まる
+//
 func main() {
 	sum := 0
 	for i := 0; i < 10; i++ {
@@ -19,4 +19,5 @@ func main() {
 
 func sub1() {
 	fmt.Println("Yahoo")
+	fmt.Println("Yahoo", "!!")
 }
