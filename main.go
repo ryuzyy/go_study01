@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // 一番初めに呼ばれる
 func init() {
@@ -15,9 +18,15 @@ func main() {
 	}
 	fmt.Println(sum)
 	sub1()
+	now_date()
 }
 
 func sub1() {
 	fmt.Println("Yahoo")
 	fmt.Println("Yahoo", "!!")
+}
+
+func now_date() {
+	nowtime := time.Now()
+	fmt.Println("The time is", nowtime.Format(time.RFC3339))
 }
