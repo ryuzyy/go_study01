@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os/user"
 	"time"
 )
 
@@ -19,6 +20,7 @@ func main() {
 	fmt.Println(sum)
 	sub1()
 	now_date()
+	osuser()
 }
 
 func sub1() {
@@ -29,4 +31,8 @@ func sub1() {
 func now_date() {
 	nowtime := time.Now()
 	fmt.Println("The time is", nowtime.Format(time.RFC3339))
+}
+
+func osuser() {
+	fmt.Println(user.Current())
 }
