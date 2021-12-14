@@ -21,6 +21,8 @@ func main() {
 	sub1()
 	now_date()
 	osuser()
+	// todo 他ファイルから関数よびたい
+	// components.foo()
 }
 
 func sub1() {
